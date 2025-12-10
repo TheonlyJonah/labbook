@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jobCriteria>
+    <!-- Job position information -->
+    <jobTitle>Software Developer</jobTitle>
+    <department>Information Technology</department>
+    
+    <!-- Minimum requirements -->
+    <minimumAge>18</minimumAge>
+    <minimumExperience>2</minimumExperience>
+    
+</jobCriteria>
