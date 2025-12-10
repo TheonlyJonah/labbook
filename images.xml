@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This XML file stores the images and their background versions. -->
+<images> 
+    <image id="1"> 
+        <thumbnail>image1.JPG</thumbnail> 
+        <background>image1.JPG</background> 
+        <description>Beautiful landscape photo</description> 
+    </image> 
+ 
+    <image id="2"> 
+        <thumbnail>image2.JPG</thumbnail> 
+        <background>image2.JPG</background> 
+        <description>Stunning portrait shot</description> 
+    </image> 
+ 
+    <image id="3"> 
+        <thumbnail>image3.JPG</thumbnail> 
+        <background>image3.JPG</background> 
+        <description>Creative abstract image</description> 
+    </image> 
+</images> 
