@@ -1,37 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Applicant Screening Tool</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Job Applicant Screening System</h1>
-        </header>
-        
-        <main>
-            <div class="screening-section">
-                <h2>Applicant Evaluation</h2>
-                <p class="instructions">Click the button below to start the screening process.</p>
-                <button id="screenBtn" onclick="screenApplicant()">Start Screening Process</button>
-                <br><br>
-            
-            </div>
-            
-            <div id="result" class="result-container" style="display: none;"></div>
-            
-            <div class="criteria-info">
-                <h3>Current Job Requirements</h3>
-                <div id="criteriaDisplay">Loading criteria...</div>
-            </div>
-        </main>
-        
-    
-    </div>
-    
-    <script src="script.js"></script>
-</body>
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Product Sales Management</title> 
+<link rel="stylesheet" href="styles.css"> 
+</head> 
+<body> 
+<div class="container"> 
+<h1>Product Sales Details</h1> 
+<button id="addSaleBtn">Add Sale</button> 
+<table id="salesTable"> 
+<thead> 
+<tr> 
+<th>Product ID</th> 
+<th>Product Name</th> 
+<th>Quantity Sold</th> 
+<th>Price</th> 
+</tr> 
+</thead> 
+<tbody> 
+<!-- Sales details will be dynamically added here --> 
+</tbody> 
+</table> 
+<script src="script.js"></script> 
+</div> 
+</body> 
 </html>
