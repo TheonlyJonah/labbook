@@ -1,17 +1,29 @@
 <!DOCTYPE html> 
-<html> 
+<html lang="en"> 
 <head> 
-<title>Day Identifier</title> 
-<link rel="stylesheet" href="style.css"> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Student Details</title> 
+<link rel="stylesheet" href="styles.css"> 
 </head> 
 <body> 
-<h2>Day of the Week Identifier</h2> 
-<form id="dayForm"> 
-<label>Enter a number (1 - 7):</label> 
-<input type="text" id="dayInput"> 
-<button type="button" onclick="checkDay()">Submit</button> 
-</form> 
-<p id="result"></p> 
+<div class="container"> 
+<h1>Student Details</h1> 
+<button id="addStudentBtn">Add Student</button> 
+<table id="studentTable"> 
+<thead> 
+<tr> 
+<th>#</th> 
+<th>Name</th> 
+<th>Age</th> 
+<th>Grade</th> 
+</tr> 
+</thead> 
+<tbody> 
+<!-- Rows will be added dynamically --> 
+</tbody> 
+</table> 
 <script src="script.js"></script> 
+</div> 
 </body> 
-</html>
+</html> 
