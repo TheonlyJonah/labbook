@@ -1,19 +1,45 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-<meta charset="UTF-8"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<title>Image Slider</title> 
-<link rel="stylesheet" href="styles.css"> 
-</head> 
-<body> 
-<div class="slider"> 
-<button id="prevBtn">&laquo; Previous</button> 
-<div class="image-container"> 
-<img id="sliderImage" src="" alt="Image 1"> 
-</div> 
-<button id="nextBtn">Next &raquo;</button> 
-</div> 
-<script src="script.js"></script> 
-</body> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Input Demo</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Information Form</h1>
+        
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+        </div>
+        
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Enter your age">
+        </div>
+        
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" rows="4" placeholder="Enter your message"></textarea>
+        </div>
+        
+        <button onclick="displayInput()">Submit</button>
+        
+        <div id="output">
+            <h2>Your Information:</h2>
+            <p>Name: <span id="displayName"></span></p>
+            <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+            <p><strong>Age:</strong> <span id="displayAge"></span></p>
+            <p><strong>Message:</strong> <span id="displayMessage"></span></p>
+        </div>
+
+    </div>
+
+   <script src="script.js"></script>
+</body>
 </html>
