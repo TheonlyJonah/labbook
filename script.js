@@ -1,31 +1,27 @@
 // script.js 
-let studentCount = 0; 
-document.getElementById('addStudentBtn').addEventListener('click', () => { 
-const name = prompt('Enter the student name:'); 
-if (!name) { 
-alert('Name cannot be empty!'); 
+document.getElementById('subscribeForm').addEventListener('submit', 
+function (event) { 
+event.preventDefault(); 
+const name = document.getElementById('name').value.trim(); 
+const email = document.getElementById('email').value.trim(); 
+const message = document.getElementById('message'); 
+// Reset message 
+message.textContent = ''; 
+// Validation 
+if (!name || !email) { 
+message.textContent = 'Please fill out all fields.'; 
+message.style.color = 'red'; 
 return; 
 } 
-const age = prompt('Enter the student age:'); 
-if (!age || isNaN(age)) { 
-alert('Please enter a valid age!'); 
+const emailPattern = /^[^@\s]+@[^@\s]+\.[^@\s]+$/; 
+if (!emailPattern.test(email)) { 
+message.textContent = 'Please enter a valid email address.'; 
+message.style.color = 'red'; 
 return; 
 } 
-const grade = prompt('Enter the student grade:'); 
-if (!grade) { 
-alert('Grade cannot be empty!'); 
-return; 
-} 
-// Increment student count 
-studentCount++; 
-// Add student details to the table 
-const tableBody = document.querySelector('#studentTable tbody'); 
-const row = document.createElement('tr'); 
-row.innerHTML = ` 
-<td>${studentCount}</td> 
-<td>${name}</td> 
-<td>${age}</td> 
-<td>${grade}</td> 
-`; 
-tableBody.appendChild(row); 
+// Success message 
+message.textContent = `Thank you, ${name}, for subscribing!`; 
+message.style.color = 'green'; 
+// Optionally, clear the form 
+document.getElementById('subscribeForm').reset(); 
 });

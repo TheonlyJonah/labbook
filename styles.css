@@ -7,22 +7,31 @@ display: flex;
 justify-content: center; 
 align-items: center; 
 min-height: 100vh; 
-background-color: #f0f0f0; 
+background-color: #f9f9f9; 
 } 
-.container { 
+.newsletter { 
 text-align: center; 
-width: 90%; 
-max-width: 600px; 
 background: #ffffff; 
 padding: 20px; 
-border-radius: 10px; 
+border-radius: 8px; 
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+width: 90%; 
+max-width: 400px; 
+} 
+form { 
+display: flex; 
+flex-direction: column; 
+} 
+input { 
+padding: 10px; 
+margin: 10px 0; 
+border: 1px solid #ccc; 
+border-radius: 5px; 
 } 
 button { 
-padding: 10px 20px; 
-margin-bottom: 20px; 
-background-color: #007bff; 
+padding: 10px; 
 color: white; 
+background-color: #007bff; 
 border: none; 
 border-radius: 5px; 
 cursor: pointer; 
@@ -31,20 +40,7 @@ transition: background-color 0.3s;
 button:hover { 
 background-color: #0056b3; 
 } 
-table { 
-width: 100%; 
-border-collapse: collapse; 
-margin-top: 20px; 
-} 
-th, td { 
-border: 1px solid #ccc; 
-padding: 10px; 
-text-align: center; 
-} 
-th { 
-background-color: #007bff; 
-color: white; 
-} 
-tr:nth-child(even) { 
-background-color: #f9f9f9; 
+#message { 
+color: green; 
+margin-top: 10px; 
 }
