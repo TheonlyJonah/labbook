@@ -1,0 +1,6 @@
+<?xml version="1.0"?> 
+<employeeTemplate> 
+<field id="empNo">Employee Number</field> 
+<field id="empName">Employee Name</field> 
+<field id="salary">Salary</field> 
+</employeeTemplate> 
